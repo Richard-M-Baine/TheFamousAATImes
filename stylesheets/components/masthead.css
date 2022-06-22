@@ -15,18 +15,28 @@ grid-template-areas: "top1 top2 top3"
 .masthead__actions{
     display: flex;
     grid-area: top3;
+    padding: 5px 0;
 }
 .masthead__technologies{
     grid-area: middle2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .masthead__date{
     grid-area: bottom1;
+    font-size: 11px;
 }
 .masthead__logo{
     grid-area: bottom2;
+    display: flex;
+    justify-content: center;
 }
 .masthead__paper{
     grid-area: bottom3;
+    font-size: 11px;
+    display:flex;
+    align-items:flex-end;
 }
 #menu1, #search1, #settings1{
 font-size: 11px;
@@ -34,4 +44,10 @@ padding: 7px 9px;
 }
 #menu1:hover, #search1:hover{
     background-color: #f7f7f5;
+}
+
+.tech-languages {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #6f6f6f;
 }
