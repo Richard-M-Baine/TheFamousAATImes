@@ -1,1 +1,37 @@
-/* Your code here */
+.masthead{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+
+grid-template-areas: "top1 top2 top3"
+"middle1 middle2 middle3"
+"bottom1 bottom2 bottom3";
+}
+.masthead__menu-and-search{
+    display: flex;
+    grid-area: top1;
+    padding-left: 20px;
+}
+.masthead__actions{
+    display: flex;
+    grid-area: top3;
+}
+.masthead__technologies{
+    grid-area: middle2;
+}
+.masthead__date{
+    grid-area: bottom1;
+}
+.masthead__logo{
+    grid-area: bottom2;
+}
+.masthead__paper{
+    grid-area: bottom3;
+}
+#menu1, #search1, #settings1{
+font-size: 11px;
+padding: 7px 9px;
+}
+#menu1:hover, #search1:hover{
+    background-color: #f7f7f5;
+}
